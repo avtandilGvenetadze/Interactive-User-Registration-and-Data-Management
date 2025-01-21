@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>registracion</title>
+  </head>
+  <body>
+    <div class="screenForNote"></div>
+    <div class="container">
+      <form action="" class="mainForm">
+        <div class="fullName">
+          <div class="nameBox">
+            <label for="name">First Name</label>
+            <img src="./images/error-image.png" alt="error" />
+            <input type="text" id="name" class="input toBeChecked" />
+            <img src="./images/success-image.png" alt="success" />
+          </div>
+
+          <div class="lasNameBox">
+            <label for="lastname">Last name</label>
+            <img src="./images/error-image.png" alt="error" />
+            <input type="text" id="lastname" class="input toBeChecked" />
+            <img src="./images/success-image.png" alt="success" />
+          </div>
+        </div>
+
+        <div class="adressWrapper">
+          <label for="Adress">Address</label>
+          <img src="./images/error-image.png" alt="error" />
+          <input type="text" id="Adress" class="input toBeChecked" />
+          <img src="./images/success-image.png" alt="success" />
+        </div>
+
+        <div class="dateWrapper">
+          <label for="date"> Select Date Of Birdth</label>
+          <input type="date" id="date" class="dateInput input" />
+          <img src="./images/success-image.png" alt="success" />
+        </div>
+
+        <div class="dropDownWrapper">
+          <label for="gender">Gender</label>
+          <img class="arrowDown" src="./images/arrow-down.png" />
+          <select id="gender" name="gender" class="input dropDown">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+          <img src="./images/success-image.png" alt="success" />
+        </div>
+
+        <div class="textAreaWrapper">
+          <label for="notes">Notes</label>
+          <textarea
+            name="notes"
+            id="notes"
+            cols="30"
+            rows="5"
+            class="input"
+          ></textarea>
+          <img src="./images/success-image.png" alt="success" />
+        </div>
+
+        <button class="submitButton">submit</button>
+      </form>
+      <table class="table">
+        <tr>
+          <th>#</th>
+          <th>First Name</th>
+          <th>Last name</th>
+          <th>Address</th>
+          <th>Date Of Birdth</th>
+          <th>Gender</th>
+          <th>delete</th>
+        </tr>
+      </table>
+      <script src="./index.js"></script>
+    </div>
+  </body>
+</html>

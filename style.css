@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.screenForNote {
+  display: none;
+  position: fixed;
+  top: 15%;
+  left: 28%;
+  z-index: 1000;
+  filter: none;
+  filter: blur(0);
+  background-color: rgba(33, 33, 33, 0.674);
+  font-size: 20px;
+  color: white;
+  padding: 16px;
+  width: 40%;
+  height: 70%;
+}
+
+.mainForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 425px;
+}
+
+textarea {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 50px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.fullName {
+  display: flex;
+  gap: 20px;
+}
+
+.nameBox,
+.lasNameBox,
+.adressWrapper,
+.dateWrapper,
+.dropDownWrapper,
+.textAreaWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+
+.dropDown {
+  appearance: none;
+  background: url("./images/arrow-down.png");
+  cursor: pointer;
+  background-size: 17px;
+  background-position: right 31px center;
+  background-repeat: no-repeat;
+}
+
+.dateInput {
+  padding-right: 32px;
+}
+
+button,
+select,
+input {
+  height: 38px;
+  padding-left: 7px;
+  font-size: 15px;
+  border: 1px solid black;
+}
+button {
+  font-size: 20px;
+}
+
+.table {
+  border-collapse: collapse;
+  cursor: pointer;
+}
+
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  width: 200px;
+}
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tr:hover {
+  background-color: #ddd;
+}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #1a1e1c;
+  color: white;
+}
+
+img {
+  display: none;
+  width: 21px;
+  position: absolute;
+  top: 32px;
+  right: 5px;
+}
+
+.blur .container {
+  filter: blur(5px);
+}
+
+.blur .screenForNote {
+  display: inline;
+}
+
+@media (max-width: 650px) {
+  .screenForNote {
+    width: 80%;
+    left: 10%;
+  }
+}
+
+@media (max-width: 450px) {
+  .fullName {
+    flex-direction: column;
+  }
+}
